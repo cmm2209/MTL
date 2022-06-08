@@ -51,12 +51,12 @@
   font-family: Courier,monospace;
 }
 .page-setup {
-  margin-left: 2em;
+  margin-left: 4em;
   margin-right: 4em;
   padding: 2.5em;
   font-family: Cochin, Georgia, Serif;
-  font-size: 14pt;
-  background-color: #ebebeb;
+  font-size: 17px;
+  background-color: #FFF;
   color: #292929;
   width: 33em;
 }
