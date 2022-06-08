@@ -25,6 +25,14 @@
           }
         }
       });
+      data.then(function(TEI){
+        app.loadData(TEI);
+        $("#loading").remove();
+        $("body").append(TEI);
+        if (window.location.hash) {
+    			window.location = window.location;
+    		}
+      })
     </script>
   </head>
   <body>
