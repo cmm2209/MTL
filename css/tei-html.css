@@ -1868,12 +1868,12 @@ html > body {
 html {
   margin: 0;
   padding: 0;
-  margin-left: 2em;
+  margin-left: 4em;
   margin-right: 4em;
   padding: 2.5em;
-  font-family: "Lucida Grande", "Cardo", "Arial Unicode MS","Galilee Unicode Gk", "New Athena Unicode", "Athena Unicode", "Palatino Linotype", "Titus Cyberbit Basic", "Vusillus Old Face", "Alphabetum", "Galatia SIL", "Code 2000", "GentiumAlt", "Gentium", "Minion Pro", "GeorgiaGreek", "Vusillus Old Face Italic", "Everson Mono", "Aristarcoj", "Porson", "Legendum", "Aisa Unicode", "Hindsight Unicode", "Caslon", "Verdana", "Tahoma";
-  font-size: 12pt;
-  background-color: white;
+  font-family: "PT Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  font-size: 17px;
+  background-color: #FFF;
   color: #292929;
 }
 img {
