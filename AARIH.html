@@ -10,7 +10,8 @@
     <script type="text/javascript" src="js/appcrit.js"></script>      
     <script src="js/alpheios-morphlib.js" charset="utf-8"></script>
     <script type="text/javascript">
-
+      var c = new CETEI();
+      c.shadowCSS = "css/tei-html.css";
       var app = new appcrit(c);
       var data = c.getHTML5('AARIH.xml', null);
       data.then(function(TEI){
