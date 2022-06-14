@@ -14,7 +14,7 @@
                   <tr bgcolor="#9acd32">
                       <th>Text</th>
                   </tr>            
-                <xsl:for-each select="TEI/body/p">
+                <xsl:for-each select="TEI/body/div">
                   <tr>
                       <td><xsl:value-of select="p" /></td>
                   </tr>
