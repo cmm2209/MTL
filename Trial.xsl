@@ -172,31 +172,19 @@
   <div style="clear: both"></div>
 
 <div id="text-toolbox-wrapper">
-  <div id='floatingBox'>
-    <div class="floating-toolbox">
-      <table>
-        <tr>
-          <th>Actions</th>
-        </tr>
-      </table>
-    </div>
-    <p id="backToTop"> <a href='#top'>Back to top</a></p>
-  </div>
 
 <div id="tml-text">
 <!-- begin text -->
     <p>
         <xsl:for-each select="TEI/body/div">
-            <xsl:value-of select="p" /><br/>
+            <xsl:value-of select="p" /><br/><br/>
         </xsl:for-each>  
     </p>
 <!-- end text -->
 </div>
 </div>
     <hr/>
-    <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
 <!--</div>-->
-<br /><br />
   <div id="cc-copy-statement">
    <table><tr><td style="text-align: center; vertical-align: top;">
    Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
