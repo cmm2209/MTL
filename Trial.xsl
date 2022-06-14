@@ -5,16 +5,9 @@
     <xsl:template match="/">
         <html>
             <body>
-              <xsl:for-each select="TEI">
-                  <xsl:for-each select="text">
-                   <xsl:for-each select="body">
-                        <xsl:for-each select="div">
-                          <xsl:for-each select="p">
-                              <h2><xsl:value-of select="TEI/text/body/div/@p"/></h2>
-                          </xsl:for-each>
-                      </xsl:for-each>
-                   </xsl:for-each>
-                </xsl:for-each>
+                <h2>Trial!</h2>
+              <xsl:for-each select="TEI/text/body/div/p">
+                              <p><xsl:value-of select="p" /></p>
               </xsl:for-each>  
             </body>
         </html>
