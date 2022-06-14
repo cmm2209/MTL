@@ -4,11 +4,22 @@
     
     <xsl:template match="/">
         <html>
+            <head>
+                <meta charset="utf-8"/>
+                <title><xsl:value-of select="TEI/teiHeader/title"/></title>
+            </head>
             <body>
-                <h2>Trial!</h2>
-              <xsl:for-each select="TEI/text/body/div/p">
-                              <p><xsl:value-of select="TEI/text/body/div/p" /></p>
+                <h2>Trial?</h2>
+              <table border="1">
+                  <tr bgcolor="#9acd32">
+                      <th>Text</th>
+                  </tr>            
+                <xsl:for-each select="TEI/body/p">
+                  <tr>
+                      <td><xsl:value-of select="p" /></td>
+                  </tr>
               </xsl:for-each>  
+            </table>
             </body>
         </html>
     </xsl:template>
