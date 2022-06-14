@@ -175,12 +175,22 @@
 
 <div id="tml-text">
 <!-- begin text -->
-    <xsl:for-each select="TEI/text/body/div/div/div">
-        <li><span class="expando opened"><span class="plus-minus">[-] </span></span><xsl:value-of select="head"/>
+    <xsl:for-each select="TEI/text/body/div/div">
+        <xsl:choose>
+            <xsl:when test="p"><span class="expando opened"><span class="plus-minus">[-] </span></span><h2><xsl:value-of select="head"/></h2>
+                <div class="expando-data" style="display: block;">
+                    <ul class="tmlSources-titleList">
+                        <li><p class="title"><xsl:value-of select="p"/></p></li></ul></div>
+            </xsl:when>
+            <xsl:otherwise><h2><xsl:value-of select="head"/></h2></xsl:otherwise>
+        </xsl:choose>    
+        <xsl:for-each select="div">
+            <span class="expando opened"><span class="plus-minus">[-] </span></span><xsl:value-of select="head"/>
             <div class="expando-data" style="display: block;">
                 <ul class="tmlSources-titleList">
-                    <li><p class="title"><xsl:value-of select="p"/></p></li></ul></div></li>
-    </xsl:for-each> 
+                    <li><p class="title"><xsl:value-of select="p"/></p></li></ul></div>
+        </xsl:for-each>
+    </xsl:for-each>
 <!-- end text -->
 </div>
 </div>
