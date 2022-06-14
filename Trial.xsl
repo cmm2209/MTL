@@ -179,13 +179,13 @@
         <xsl:if test="head">
             <h2><xsl:value-of select="head"/></h2>
         </xsl:if>
+        <xsl:for-each select="div">
+            <xsl:if test="head">
+                <h3><xsl:value-of select="head"/></h3>
+            </xsl:if>         
+            <p><xsl:value-of select="p"/></p>
+        </xsl:for-each>
     </xsl:for-each>
-    <xsl:for-each select="TEI/text/body/div/div/div">
-        <xsl:if test="head">
-            <h3><xsl:value-of select="head"/></h3>
-        </xsl:if>         
-        <p><xsl:value-of select="p"/></p>
-    </xsl:for-each> 
 <!-- end text -->
 </div>
 </div>
