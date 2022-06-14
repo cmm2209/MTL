@@ -173,14 +173,15 @@
 
 <div id="text-toolbox-wrapper">
 
-
 <div id="tml-text">
 <!-- begin text -->
-    <p>
-        <xsl:for-each select="TEI/text/body/div">
-            <xsl:value-of select="p" /><br/><br/>
-        </xsl:for-each>  
-    </p>
+    <xsl:for-each select="TEI/text/body/div/div">
+        <h2><xsl:value-of select="head"/></h2>
+    </xsl:for-each>    
+    <xsl:for-each select="TEI/text/body/div/div/div">
+    <h3><xsl:value-of select="head"/></h3>
+    <p><xsl:value-of select="p"/></p>
+    </xsl:for-each>
 <!-- end text -->
 </div>
 </div>
