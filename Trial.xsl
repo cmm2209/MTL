@@ -13,6 +13,33 @@
                 <!--<link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/w3.css" />-->
                 <link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/fancybox.css" />
                 <script type= "text/javascript" src="https://chmtl.indiana.edu/tml/16th/_assets/js/chmtl_file.min.js"></script>
+                <script type= "text/javascript" src="Collapse.js"></script>
+                <style>
+                    .collapsible {
+                    background-color: white;
+                    cursor: pointer;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    }
+                    
+                    .collapsible:after {
+                    content: '\2212';
+                    color: black;
+                    font-weight: bold;
+                    float: left;
+                    }
+                    
+                    .active:after {
+                    content: "\002B";
+                    }
+                    
+                    .content {
+                    padding: 18px;
+                    display: block;
+                    overflow: hidden;
+                    }
+                </style>
             </head>
             <body>
                 <div id="chmtl-identity">
@@ -176,17 +203,15 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="TEI/text/body/div/div">
-        <xsl:choose>
-            <xsl:when test="p"><span class="expando closed"><span class="plus-minus">[+] </span></span><h2><xsl:value-of select="head"/></h2>
-                <div class="expando-data" style="display: none;">
-                        <p class="title"><xsl:value-of select="p"/></p></div>
-            </xsl:when>
-            <xsl:otherwise><h2><xsl:value-of select="head"/></h2></xsl:otherwise>
-        </xsl:choose>    
+        <xsl:if test="head">
+            <h2><button class="collapsible"><xsl:value-of select="head"/></button></h2>
+            <div class="content"><p><xsl:value-of select="p"/></p></div>
+        </xsl:if>
         <xsl:for-each select="div">
-            <span class="expando closed"><span class="plus-minus">[+] </span></span><xsl:value-of select="head"/>
-            <div class="expando-data" style="display: none;">
-                <p class="title"><xsl:value-of select="p"/></p></div>
+            <xsl:if test="head">
+                <h3><button class="collapsible"><xsl:value-of select="head"/></button></h3>
+                <div class="content"><p><xsl:value-of select="p"/></p></div>
+            </xsl:if>         
         </xsl:for-each>
     </xsl:for-each>
 <!-- end text -->
