@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://cmm2209.github.io/MTL/Trial.xsl"?>
 <TEI>
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>Trial!</title>
-      </titleStmt>
-      <publicationStmt><p>Published somewhere</p></publicationStmt>
-      <sourceDesc><p>?</p></sourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
+<text>
 <body>
   <div type="textpart" subtype="chapter" n="1" xml:id="I.1">
     <p><title>Trial!</title></p>
