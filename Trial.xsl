@@ -27,10 +27,10 @@
                 </div>
                 <div id="identity">
                     <div id="menu-container">
-                        <a><span class="menu-btn"><i class="fa fa-bars"></i>&nbsp;&nbsp;Menu</span></a>
+                        <a><span class="menu-btn"><i class="fa fa-bars"></i>&#xA0;&#xA0;Menu</span></a>
                         <a href="/tml/"><span class="home-link">Home</span></a>
                         <span class="search-short">
-                            <a class="modal-tooltip" modal="search-tip">&nbsp;<i class="fa fa-info-circle" aria-hidden="true">
+                            <a class="modal-tooltip" modal="search-tip">&#xA0;<i class="fa fa-info-circle" aria-hidden="true">
                                 <span class="sr-only">Click for more information</span></i></a>
                             <form  action="#" id="menuSearch"><input type="text" id="menuSearchText" placeholder="Quick search"/></form><span class="navSearchButton"><i class="fa fa-search"></i></span></span>
                         <a href="/tml/copyright" target="_blank"><span class="copyright-short">Copyright Notice</span></a>
@@ -42,7 +42,7 @@
                                 <a class="close-modal" modal="search-tip"><span class="w3-closebtn"><i class="fa fa-times" aria="hidden"></i></span></a>
                                 <br />
                                 
-                                <p>Use the &ldquo;Quick search&rdquo; if you want to search for <em>all documents</em> within the <em>whole archive</em> where words <em>matching or containing</em> the searched string are found.</p>
+                                <p>Use the &#x201c;Quick search&#x201d; if you want to search for <em>all documents</em> within the <em>whole archive</em> where words <em>matching or containing</em> the searched string are found.</p>
                                 <p>For more specific queries (phrase searching, operators, and filters), visit the <a href="/tml/quaero" target="_blank">full Search</a> page.</p>
                             </div>
                         </div>
@@ -97,7 +97,8 @@
                                             <li class="pushy-link"><a href="/tml/concordances/lml"><em>Lexicon musicum Latinum</em></a></li>
                                             <li class="pushy-link"><a href="/tml/concordances/grove_anonymous">Grove Anonymous</a></li>
                                         </ul>
-                                </ul>
+                                     </li>
+                              </ul>
                             </li>
                         </ul>
                     </nav>
@@ -116,8 +117,13 @@
                                 <p class="title">Libri tres de institutione harmonica, liber primus</p>
                                 <p class="tmlSource"><strong>Source</strong>: <i>Libri tres de institutione harmonica editi a Petro Aaron Florentino</i> (Bononiae, In aedibus Benedicti Hectoris Bibliopolae Bononiensis, 1516; reprint ed., New York: Broude Bros., 1978), ff. Air–Cviv.</p>
                                 <p id="chmtl-staff">
-                                    <span class="eca-span">Electronic version prepared by Jessica Burr <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>, Elisabeth Honn, Andreas Giger <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>, and Thomas J. Mathiesen <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a>
-                                        for the <i>Thesaurus Musicarum Latinarum</i>, 1996.
+                                    <span class="eca-span">Electronic version prepared by Jessica Burr 
+                                        <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>, 
+                                        Elisabeth Honn, Andreas Giger 
+                                        <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>, 
+                                        and Thomas J. Mathiesen 
+                                        <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a>
+                                        for the <i>Thesaurus Musicarum Latinarum</i>, 1996.</span>
                                 </p>
                             </div>
                             
@@ -154,23 +160,27 @@
                         </div>
                         
                         <div id="metadata-contd">
-                            <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&nbsp;<button id="tml-concordances" class="pure-button">Concordances</button></p>
+                            <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&#xA0;<button id="tml-concordances" class="pure-button">Concordances</button></p>
                             
                             <div id="sidebar">
                                 <div id="extras-wrapper">
                                     <!---->
                                     <div id="tml-canon-info">
-                                        <div class="extras-heading"><a class="close-modal repoToolbox" modal="tml-canon-info"><i class="fa fa-times" aria="hidden"></i></a>&nbsp;<span class="title">TML Notes</i></span></div>
+                                        <div class="extras-heading">
+                                            <a class="close-modal repoToolbox" modal="tml-canon-info">
+                                                <i class="fa fa-times" aria="hidden"></i></a>
+                                            &#xA0;<span class="title">TML Notes</span>
+                                        </div>
                                         <p>The incipit is preceded by dedicatory epistles, beginning: "Scio, te non ignorare Clarissime Eques Hieronyme Sancte Petre ... " and "Fuit mihi tecum Petre Aaron vetus, et constans benivolentia ...." An additional fascicle of corrigenda was published later, perhaps in response to criticisms from Gaffurio; it is included in the Broude Bros. reprint but not in the 1970 reprint published in Bologna by Forni. The corrigenda are not simple corrections of typographical errors but rather clarifications, elaborations, and retractions. The text of the corrigenda is accordingly included in the TML as a separate file: <a href="/tml/16th/AARIHCOR">AARIHCOR</a>. [TJM]</p>
                                     </div>
                                     <div id="concordances">
-                                        <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&nbsp;<span class="title">Concordances</i></span></div>
+                                        <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">Concordances</span></div>
                                         
                                     </div>
                                     <div style="clear: both"></div>
                                 </div><!--extras-wrapper -->
                             </div><!--sidebar-->
-                            <p id="multipart-file">This is a multipart text <a class="modal-tooltip" modal="multipart-tip"><i class="fa fa-info-circle" aria-hidden="true"></i></a>&emsp;&emsp;&emsp; <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
+                            <p id="multipart-file">This is a multipart text <a class="modal-tooltip" modal="multipart-tip"><i class="fa fa-info-circle" aria-hidden="true"></i></a>&#x2003;&#x2003;&#x2003; <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
                             
                         </div><!--metadata-contd-->
                         <div style="clear: both"></div>
@@ -186,6 +196,9 @@
                                 </div>
                                 <p id="backToTop"> <a href='#top'>Back to top</a></p>
                             </div>
+                        </div>
+                    </div>
+                
               <table border="1">
                   <tr>
                       <th>Text</th>
@@ -196,8 +209,9 @@
                   </tr>
               </xsl:for-each>  
             </table>
-            </body>
-        </html>
+           </div>
+         </body>
+       </html>
     </xsl:template>
 
 </xsl:stylesheet>
