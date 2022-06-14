@@ -185,7 +185,7 @@
 </div>
 </div>
     <hr/>
-    <p>Filler.</p>
+    <p/>
 <!--</div>-->
 <br /><br />
   <div id="cc-copy-statement">
