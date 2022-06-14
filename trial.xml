@@ -36,12 +36,12 @@
       <variantEncoding method="location-referenced" location="internal"/>
     </encodingDesc>
     <profileDesc>
-    <creation>
-      <rs resp="E"><name>Jessica Burr</name></rs> 
-      <rs resp="C"><name>Elisabeth Honn, Andreas Giger</name></rs>
-      <rs resp="A"><name>Thomas J. Mathiesen</name></rs>
-      <date n="1996">1996</date>
-    </creation>
+      <creation>
+        <rs resp="entered"><name>Jessica Burr</name></rs> 
+        <rs resp="checked"><name>Elisabeth Honn, Andreas Giger</name></rs>
+        <rs resp="approved"><name>Thomas J. Mathiesen</name></rs>
+        <date n="1996">1996</date>
+      </creation>
   </profileDesc>
   </teiHeader>
 <body>
