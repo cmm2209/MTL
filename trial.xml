@@ -2,8 +2,48 @@
 <?xml-stylesheet type="text/xsl" href="https://cmm2209.github.io/MTL/Trial.xsl"?>
 <TEI>
 <teiHeader>
-  <title>Test</title>
-</teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Libri tres de institutione harmonica</title>
+        <author>Aaron, Petrus</author>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Thesaurus Musicarum Latinarum</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Libri tres de institutione harmonica editi a Petro Aaron Florentino</title>
+          (<pubPlace>Bononiae</pubPlace>,
+          <publisher>In aedibus Benedicti Hectoris Bibliopolae Bononiensis</publisher>,
+          <date n="1516">1516</date>;
+          <edition>reprint ed., New York: Broude Bros., 1978</edition>)
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <charDecl>
+        <glyph xml:id="sqb">
+          <glyphName>LATIN LETTER SMALL B SQUARED</glyphName>
+          <charProp>
+            <localName>entity</localName>
+            <value>sqb</value>
+          </charProp>
+        </glyph>
+      </charDecl>
+      <refsDecl>
+        <refState unit="folio" length="2" delim="."/>
+      </refsDecl>
+      <variantEncoding method="location-referenced" location="internal"/>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <name resp="E">Jessica Burr</name>
+        <name resp="C">Elisabeth Honn, Andreas Giger</name>
+        <name resp="A">Thomas J. Mathiesen</name>
+        <date n="1996">1996</date>
+      </creation>
+    </profileDesc>
+  </teiHeader>
 <body>
     <div><p n="1"><title>Trial!</title></p></div>
     <div><p n="2">MAGNVM EST FLAMINI QVOD heri sum pollicitus nec me quidem poenitet aut sententiam muto, immo rei magnitudine magis, et claritate crescit animus, et in horas fit ardentior. Tu tantum mihi praesta, quam hesterno die pollicitus es promptam, et alacrem operam, et nihil non successurum putes. Arduum sane est, quod mente agito, ac prope diuinum. Sed mearum ipse uirium sum conscius, et quid possim intelligo non immemor horatiani illius praecepti.
