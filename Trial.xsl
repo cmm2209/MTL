@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns="http://www.w3.org/TR/xhtml1/strict">
-    <xsl:output
-        method="xhtml"
-    />    
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
     <xsl:template match="/">
         <html>
             <body>
@@ -20,9 +17,5 @@
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="title">
-        <span style="color:#ff0000">
-            <xsl:value-of select="title"/></span>
-        <br />
-    </xsl:template>
+
 </xsl:stylesheet>
