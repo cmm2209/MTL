@@ -151,84 +151,100 @@
                             </div>
                         </div>
                         
-                        <div id="metadata-contd">
-                            <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&#xA0;<button id="tml-concordances" class="pure-button">Concordances</button></p>
-                            
-                            <div id="sidebar">
-                                <div id="extras-wrapper">
-                                    <!---->
-                                    <div id="tml-canon-info">
-                                        <div class="extras-heading">
-                                            <a class="close-modal repoToolbox" modal="tml-canon-info">
-                                                <i class="fa fa-times" aria="hidden"></i></a>
-                                            &#xA0;<span class="title">TML Notes</span>
-                                        </div>
-                                        <p>The incipit is preceded by dedicatory epistles, beginning: "Scio, te non ignorare Clarissime Eques Hieronyme Sancte Petre ... " and "Fuit mihi tecum Petre Aaron vetus, et constans benivolentia ...." An additional fascicle of corrigenda was published later, perhaps in response to criticisms from Gaffurio; it is included in the Broude Bros. reprint but not in the 1970 reprint published in Bologna by Forni. The corrigenda are not simple corrections of typographical errors but rather clarifications, elaborations, and retractions. The text of the corrigenda is accordingly included in the TML as a separate file: <a href="/tml/16th/AARIHCOR">AARIHCOR</a>. [TJM]</p>
-                                    </div>
-                                    <div id="concordances">
-                                        <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">Concordances</span></div>
-                                        
-                                    </div>
-                                    <div style="clear: both"></div>
-                                </div><!--extras-wrapper -->
-                            </div>
-                        </div><!--metadata-contd-->
-                        <div style="clear: both"></div>
-                    </div>
-                   
-                    <div id="tml-text">
-                        <!-- begin text -->
-              <p>
-                <xsl:for-each select="TEI/body/div">
-                      <xsl:value-of select="p" /><br/>
-              </xsl:for-each>  
-            </p>
-           </div>
-         </div>
-                <hr/>
-                <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
-                <!--</div>-->
-                <br /><br />
-                <div id="cc-copy-statement">
-                    <table><tr><td style="text-align: center; vertical-align: top;">
-                        Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
-                        <br />
-                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Thesaurus Musicarum Latinarum</em></span> -
-                        <a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons Attribution License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-                        </td></tr></table>
-                </div> 
-                
-                <div id="footer">
-                    <div id="chmtl_logo">
-                        <a href="/">
-                            <img src="_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
-                        </a>
-                    </div>
-                    <div id="copyright">
-                        <p>The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.</p>
-                    </div>
-                    <ul id="footerNav">
-                        <li><a href="http://www.chmtl.indiana.edu/resarch/e-projects.shtml">CHMTL Projects:</a></li>
-                        <li class="active">TML</li>
-                    </ul>
-                </div>
-                
-                <div id="iu_footer">
-                    <hr />
-                    <div id="copyright">
-                        <div id="blockiu">
-                            <a href="http://www.iub.edu" title="Indiana University">
-                                <img alt="Block IU" height="28" src="_assets/img/blockiu_white.gif" width="22" />
-                            </a>
-                        </div>
-                        <p id="statement">
-                            <a href="http://www.indiana.edu/comments/copyright.shtml" title="Copyright">Copyright</a> © 2022 The Trustees of <a href="http://www.iu.edu" title="Indiana University">Indiana University</a> | <a href="http://www.indiana.edu/comments/complaint.shtml" title="Copyright Complaints">Copyright Complaints</a> | <a href="//music.indiana.edu/departments/offices/music-information-technology-services/privacy.shtml">Privacy Notice</a>
-                        </p>
-                    </div>
-                </div>
-            </body>
+                         <div id="metadata-contd">
+                             <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&#xA0;<button id="tml-concordances" class="pure-button">Concordances</button></p>
+
+  <div id="sidebar">
+      <div id="extras-wrapper">
+        <!---->
+        <div id="tml-canon-info">
+            <div class="extras-heading"><a class="close-modal repoToolbox" modal="tml-canon-info"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">TML Notes</span></div>
+          <p>The incipit is preceded by dedicatory epistles, beginning: "Scio, te non ignorare Clarissime Eques Hieronyme Sancte Petre ... " and "Fuit mihi tecum Petre Aaron vetus, et constans benivolentia ...." An additional fascicle of corrigenda was published later, perhaps in response to criticisms from Gaffurio; it is included in the Broude Bros. reprint but not in the 1970 reprint published in Bologna by Forni. The corrigenda are not simple corrections of typographical errors but rather clarifications, elaborations, and retractions. The text of the corrigenda is accordingly included in the TML as a separate file: <a href="/tml/16th/AARIHCOR">AARIHCOR</a>. [TJM]</p>
+        </div>
+<div id="concordances">
+    <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">Concordances</span></div>
+  
+  </div>
+  <div style="clear: both"></div>
+    </div><!--extras-wrapper -->
+  </div><!--sidebar-->
+  </div><!--metadata-contd-->
+  <div style="clear: both"></div>
+
+<div id="text-toolbox-wrapper">
+  <div id='floatingBox'>
+    <div class="floating-toolbox">
+      <table>
+        <tr>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+    <p id="backToTop"> <a href='#top'>Back to top</a></p>
+  </div>
+
+<div id="tml-text">
+<!-- begin text -->
+    <p>
+        <xsl:for-each select="TEI/body/div">
+            <xsl:value-of select="p" /><br/>
+        </xsl:for-each>  
+    </p>
+<!-- end text -->
+</div>
+</div>
+    <hr/>
+    <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
+<!--</div>-->
+<br /><br />
+  <div id="cc-copy-statement">
+   <table><tr><td style="text-align: center; vertical-align: top;">
+   Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+<br />
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Thesaurus Musicarum Latinarum</em></span> -
+<a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022</td>
+     <td style="text-align: center; vertical-align: middle;">
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons Attribution License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+</td></tr></table>
+  </div>
+
+  </div> <!-- #content -->
+
+</div> <!-- #container -->
+
+<div id="footer">
+  <div id="chmtl_logo">
+    <a href="/">
+        <img src="_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
+    </a>
+  </div>
+  <div id="copyright">
+    <p>The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.</p>
+  </div>
+  <ul id="footerNav">
+    <li><a href="http://www.chmtl.indiana.edu/resarch/e-projects.shtml">CHMTL Projects:</a></li>
+    <li class="active">TML</li>
+    <li class='pipe'><a href="/smi/">SMI</a></li>
+    <li class='pipe'><a href="/tme/">TME</a></li>
+    <li class='pipe'><a href="/tfm/">TFM</a></li>
+    <li class='pipe'><a href="/borrowing/">MBR</a></li>
+  </ul>
+</div>
+
+<div id="iu_footer">
+    <hr />
+    <div id="copyright">
+        <div id="blockiu">
+            <a href="http://www.iub.edu" title="Indiana University">
+                <img alt="Block IU" height="28" src="_assets/img/blockiu_white.gif" width="22" />
+            </a>
+        </div>
+        <p id="statement">
+        <a href="http://www.indiana.edu/comments/copyright.shtml" title="Copyright">Copyright</a> © 2022 The Trustees of <a href="http://www.iu.edu" title="Indiana University">Indiana University</a> | <a href="http://www.indiana.edu/comments/complaint.shtml" title="Copyright Complaints">Copyright Complaints</a> | <a href="//music.indiana.edu/departments/offices/music-information-technology-services/privacy.shtml">Privacy Notice</a>
+        </p>
+    </div>
+</div>
+</body>
        </html>
     </xsl:template>
 
