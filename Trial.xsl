@@ -120,8 +120,9 @@
                                     <span class="eca-span">Electronic version  
                                         <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='entered'">prepared by <xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='entered']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>,</xsl:if>
-
-                                        <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='checked'">with <xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='checked']/name"/>
+                                        <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='transcribed'">transcribed by <xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='transcribed']/name"/>
+                                            <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>,</xsl:if>
+                                        with <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='checked'"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='checked']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>,</xsl:if>
                                         and <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='approved'"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='approved']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a></xsl:if>
@@ -174,21 +175,10 @@
                             </div>
                         </div><!--metadata-contd-->
                         <div style="clear: both"></div>
-                        
-                        <div id="text-toolbox-wrapper">
-                            <div id='floatingBox'>
-                                <div class="floating-toolbox">
-                                    <table>
-                                        <tr>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <p id="backToTop"> <a href='#top'>Back to top</a></p>
-                            </div>
-                        </div>
                     </div>
-                
+                   
+                    <div id="tml-text">
+                        <!-- begin text -->
               <table border="1">
                   <tr>
                       <th>Text</th>
@@ -200,6 +190,7 @@
               </xsl:for-each>  
             </table>
            </div>
+         </div>
            <hr/>
            <!--</div>-->
                 <br /><br />
