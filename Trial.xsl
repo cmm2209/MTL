@@ -7,7 +7,7 @@
             <body>
                 <h2>Trial!</h2>
               <xsl:for-each select="TEI/text/body/div/p">
-                              <p><xsl:value-of select="p" /></p>
+                              <p><xsl:value-of select="TEI/text/body/div/p" /></p>
               </xsl:for-each>  
             </body>
         </html>
