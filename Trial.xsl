@@ -5,7 +5,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title><xsl:value-of select="TEI/teiHeader/title"/></title>
+                <title><xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title"/></title>
                 <meta charset="utf-8"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
                 <link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/tml/layout.css" />
@@ -108,22 +108,22 @@
                         <noscript>
                             <div  id="noScript" class="warning">
                                 <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> JavaScript Required</p>
-                                <p>In order to ensure the proper functining of this website, please enable JavaScript in your browser security preferences or use a device that supports it.</p>
+                                <p>In order to ensure the proper functioning of this website, please enable JavaScript in your browser security preferences or use a device that supports it.</p>
                             </div>
                         </noscript>
                         <div id="header">
                             <div id="source" class="ft-text">
-                                <p class="author">Aaron, Petrus</p>
-                                <p class="title">Libri tres de institutione harmonica, liber primus</p>
-                                <p class="tmlSource"><strong>Source</strong>: <i>Libri tres de institutione harmonica editi a Petro Aaron Florentino</i> (Bononiae, In aedibus Benedicti Hectoris Bibliopolae Bononiensis, 1516; reprint ed., New York: Broude Bros., 1978), ff. Air–Cviv.</p>
+                                <p class="author"><xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/author"/></p>
+                                <p class="title"><xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title"/></p>
+                                <p class="tmlSource"><strong>Source</strong>: <i><xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/title"/></i> (<xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/pubPlace"/>, <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/publisher"/>, <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/date"/>; <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/edition"/>).</p>
                                 <p id="chmtl-staff">
-                                    <span class="eca-span">Electronic version prepared by Jessica Burr 
+                                    <span class="eca-span">Electronic version prepared by <xsl:value-of select="TEI/teiHeader/profileDesc/creation/name[resp='E']"/> 
                                         <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>, 
-                                        Elisabeth Honn, Andreas Giger 
+                                        <xsl:value-of select="TEI/teiHeader/profileDesc/creation/name[resp='C']"/> 
                                         <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>, 
-                                        and Thomas J. Mathiesen 
+                                        and <xsl:value-of select="TEI/teiHeader/profileDesc/creation/name[resp='A']"/>
                                         <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a>
-                                        for the <i>Thesaurus Musicarum Latinarum</i>, 1996.</span>
+                                        for the <i><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/></i>, <xsl:value-of select="TEI/teiHeader/profileDesc/creation/date"/>.</span>
                                 </p>
                             </div>
                             
@@ -149,16 +149,6 @@
                             </div>
                         </div>
                         
-                        <div id="multipart-tip" class="w3-modal">
-                            <div class="w3-modal-content">
-                                <div class="w3-container">
-                                    <a class="close-modal" modal="multipart-tip"><span class="w3-closebtn"><i class="fa fa-times" aria="hidden"></i></span></a>
-                                    <br />
-                                    <p>Historically, in the TML long texts were split into multiple files. These are now linked to each other for easier browsing. In a future version, they will be consolidated into a single view.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div id="metadata-contd">
                             <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&#xA0;<button id="tml-concordances" class="pure-button">Concordances</button></p>
                             
@@ -179,9 +169,7 @@
                                     </div>
                                     <div style="clear: both"></div>
                                 </div><!--extras-wrapper -->
-                            </div><!--sidebar-->
-                            <p id="multipart-file">This is a multipart text <a class="modal-tooltip" modal="multipart-tip"><i class="fa fa-info-circle" aria-hidden="true"></i></a>&#x2003;&#x2003;&#x2003; <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
-                            
+                            </div>
                         </div><!--metadata-contd-->
                         <div style="clear: both"></div>
                         
@@ -210,6 +198,43 @@
               </xsl:for-each>  
             </table>
            </div>
+                
+                <br /><br />
+                <div id="cc-copy-statement">
+                    <table><tr><td style="text-align: center; vertical-align: top;">
+                        Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+                        <br />
+                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/></em></span> -
+                        <a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022</td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons Attribution License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+                        </td></tr></table>
+                </div>
+               
+          <div id="footer">
+                    <div id="chmtl_logo">
+                        <a href="/">
+                            <img src="_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        <p>The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.</p>
+                    </div>
+                </div>
+                
+                <div id="iu_footer">
+                    <hr />
+                    <div id="copyright">
+                        <div id="blockiu">
+                            <a href="http://www.iub.edu" title="Indiana University">
+                                <img alt="Block IU" height="28" src="_assets/img/blockiu_white.gif" width="22" />
+                            </a>
+                        </div>
+                        <p id="statement">
+                            <a href="http://www.indiana.edu/comments/copyright.shtml" title="Copyright">Copyright</a> © 2022 The Trustees of <a href="http://www.iu.edu" title="Indiana University">Indiana University</a> | <a href="http://www.indiana.edu/comments/complaint.shtml" title="Copyright Complaints">Copyright Complaints</a> | <a href="//music.indiana.edu/departments/offices/music-information-technology-services/privacy.shtml">Privacy Notice</a>
+                        </p>
+                    </div>
+                </div>
          </body>
        </html>
     </xsl:template>
