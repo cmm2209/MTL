@@ -179,16 +179,11 @@
                    
                     <div id="tml-text">
                         <!-- begin text -->
-              <table border="1">
-                  <tr>
-                      <th>Text</th>
-                  </tr>            
+              <p>
                 <xsl:for-each select="TEI/body/div">
-                  <tr>
                       <td><xsl:value-of select="p" /></td>
-                  </tr>
               </xsl:for-each>  
-            </table>
+            </p>
            </div>
          </div>
            <hr/>
