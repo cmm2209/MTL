@@ -193,7 +193,10 @@
    Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
 <br />
 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Thesaurus Musicarum Latinarum</em></span> -
-<a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022</td>
+<a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022
+       <br />
+       The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.
+   </td>
      <td style="text-align: center; vertical-align: middle;">
 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons Attribution License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 </td></tr></table>
@@ -202,25 +205,6 @@
   </div> <!-- #content -->
 
 </div> <!-- #container -->
-
-<div id="footer">
-  <div id="chmtl_logo">
-    <a href="/">
-        <img src="https://chmtl.indiana.edu/tml/16th/_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
-    </a>
-  </div>
-  <div id="copyright">
-    <p>The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.</p>
-  </div>
-  <ul id="footerNav">
-    <li><a href="http://www.chmtl.indiana.edu/resarch/e-projects.shtml">CHMTL Projects:</a></li>
-    <li class="active">TML</li>
-      <li class='pipe'><a href="https://chmtl.indiana.edu/smi/">SMI</a></li>
-      <li class='pipe'><a href="https://chmtl.indiana.edu/tme/">TME</a></li>
-      <li class='pipe'><a href="https://chmtl.indiana.edu/tfm/">TFM</a></li>
-      <li class='pipe'><a href="https://chmtl.indiana.edu/borrowing/">MBR</a></li>
-  </ul>
-</div>
 
 <div id="iu_footer">
     <hr />
