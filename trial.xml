@@ -36,13 +36,13 @@
       <variantEncoding method="location-referenced" location="internal"/>
     </encodingDesc>
     <profileDesc>
-      <creation>
-        <name resp="E">Jessica Burr</name>
-        <name resp="C">Elisabeth Honn, Andreas Giger</name>
-        <name resp="A">Thomas J. Mathiesen</name>
-        <date n="1996">1996</date>
-      </creation>
-    </profileDesc>
+    <creation>
+      <rs resp="E"><name>Jessica Burr</name></rs> 
+      <rs resp="C"><name>Elisabeth Honn, Andreas Giger</name></rs>
+      <rs resp="A"><name>Thomas J. Mathiesen</name></rs>
+      <date n="1996">1996</date>
+    </creation>
+  </profileDesc>
   </teiHeader>
 <body>
     <div><p n="1"><title>Trial!</title></p></div>
