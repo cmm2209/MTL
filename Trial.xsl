@@ -173,6 +173,7 @@
 
 <div id="text-toolbox-wrapper">
 
+
 <div id="tml-text">
 <!-- begin text -->
     <p>
@@ -184,7 +185,9 @@
 </div>
 </div>
     <hr/>
+    <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
 <!--</div>-->
+<br /><br />
   <div id="cc-copy-statement">
    <table><tr><td style="text-align: center; vertical-align: top;">
    Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
