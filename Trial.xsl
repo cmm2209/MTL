@@ -87,7 +87,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="pushy-submenu"><a href="/tml/quaero">SEARCH</a></li>
+                            <li class="pushy-submenu"><a href="https://chmtl.indiana.edu/tml/quaero">SEARCH</a></li>
                             <li class="pushy-submenu">
                                 <a class="submenu-heading">EXTRAS</a>
                                 <ul>
@@ -102,7 +102,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="site-overlay"></div>
                     
                     <div id="content">
                         <noscript>
@@ -181,26 +180,27 @@
                         <!-- begin text -->
               <p>
                 <xsl:for-each select="TEI/body/div">
-                      <td><xsl:value-of select="p" /></td>
+                      <xsl:value-of select="p" /><br/>
               </xsl:for-each>  
             </p>
            </div>
          </div>
-           <hr/>
-           <!--</div>-->
+                <hr/>
+                <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
+                <!--</div>-->
                 <br /><br />
                 <div id="cc-copy-statement">
                     <table><tr><td style="text-align: center; vertical-align: top;">
                         Except where otherwise noted, this website is subject to a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
                         <br />
-                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/></em></span> -
+                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Thesaurus Musicarum Latinarum</em></span> -
                         <a xmlns:cc="http://creativecommons.org/ns#" style="color:black" href="https://chmtl.indiana.edu/tml" property="cc:attributionName" rel="cc:attributionURL">https://chmtl.indiana.edu/tml</a> - 2022</td>
                         <td style="text-align: center; vertical-align: middle;">
                             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons Attribution License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
                         </td></tr></table>
-                </div>
-               
-          <div id="footer">
+                </div> 
+                
+                <div id="footer">
                     <div id="chmtl_logo">
                         <a href="/">
                             <img src="_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
@@ -209,6 +209,10 @@
                     <div id="copyright">
                         <p>The <a href="/">Center for the History of Music Theory and Literature</a> is a research center of the <a href="http://music.indiana.edu">Indiana University Jacobs School of Music</a>.</p>
                     </div>
+                    <ul id="footerNav">
+                        <li><a href="http://www.chmtl.indiana.edu/resarch/e-projects.shtml">CHMTL Projects:</a></li>
+                        <li class="active">TML</li>
+                    </ul>
                 </div>
                 
                 <div id="iu_footer">
@@ -224,7 +228,7 @@
                         </p>
                     </div>
                 </div>
-         </body>
+            </body>
        </html>
     </xsl:template>
 
