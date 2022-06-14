@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://cmm2209.github.io/MTL/Trial.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://cmm2209.github.io/MTL/MTL.xsl"?>
 <TEI>
   <teiHeader>
     <fileDesc>
@@ -50,7 +50,7 @@
 <text>
 <body>
 <div type="edition" xml:id="edition-text" xml:space="preserve">
-<div type="textpart" subtype="book" n="1" xml:id="preface">
+<div type="textpart" subtype="book" n="0" xml:id="preface">
   <head><milestone unit="folio" n="Air"/>LIBRI TRES DE INSTITVTIONE HARMONICA EDITI A PETRO AARON FLORENTINO INTERPRETE IOANNE ANTONIO FLAMINIO FOROCORNELITE.</head>
   <div type="textpart" subtype="chapter" n="1" xml:id="intro">
     <milestone unit="Aiir"/><head>PETRVS AARON FLORENTINVS CLARISSIMO EQVITI HIERONYMO SANCTO PETRO. SALVTEM DICIT</head>
