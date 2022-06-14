@@ -125,7 +125,7 @@
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>,</xsl:if>
                                         and <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='approved'"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='approved']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a></xsl:if>
-                                        for the <i><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/></i>, <xsl:value-of select="TEI/teiHeader/profileDesc/creation/date"/>.</span>
+                                        for the <i><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/publisher"/></i>, <xsl:value-of select="TEI/teiHeader/profileDesc/creation/date"/>.</span>
                                 </p>
                             </div>
                             
@@ -159,7 +159,7 @@
         <!---->
         <div id="tml-canon-info">
             <div class="extras-heading"><a class="close-modal repoToolbox" modal="tml-canon-info"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">TML Notes</span></div>
-          <p>The incipit is preceded by dedicatory epistles, beginning: "Scio, te non ignorare Clarissime Eques Hieronyme Sancte Petre ... " and "Fuit mihi tecum Petre Aaron vetus, et constans benivolentia ...." An additional fascicle of corrigenda was published later, perhaps in response to criticisms from Gaffurio; it is included in the Broude Bros. reprint but not in the 1970 reprint published in Bologna by Forni. The corrigenda are not simple corrections of typographical errors but rather clarifications, elaborations, and retractions. The text of the corrigenda is accordingly included in the TML as a separate file: <a href="/tml/16th/AARIHCOR">AARIHCOR</a>. [TJM]</p>
+            <p><xsl:value-of select="TEI/teiHeader/profileDesc/settingDesc/p" /></p>
         </div>
 <div id="concordances">
     <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">Concordances</span></div>
@@ -177,7 +177,7 @@
 <div id="tml-text">
 <!-- begin text -->
     <p>
-        <xsl:for-each select="TEI/body/div">
+        <xsl:for-each select="TEI/text/body/div">
             <xsl:value-of select="p" /><br/><br/>
         </xsl:for-each>  
     </p>
@@ -185,7 +185,7 @@
 </div>
 </div>
     <hr/>
-    <p> <a href='AARIH2'>Next part <i class="fa fa-angle-double-right"></i></a>  </p>
+    <p>Filler.</p>
 <!--</div>-->
 <br /><br />
   <div id="cc-copy-statement">
@@ -206,7 +206,7 @@
 <div id="footer">
   <div id="chmtl_logo">
     <a href="/">
-        <img src="_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
+        <img src="https://chmtl.indiana.edu/tml/16th/_assets/img/chmtl_logo_trans.png" alt="CHMTL Logo" />
     </a>
   </div>
   <div id="copyright">
@@ -215,10 +215,10 @@
   <ul id="footerNav">
     <li><a href="http://www.chmtl.indiana.edu/resarch/e-projects.shtml">CHMTL Projects:</a></li>
     <li class="active">TML</li>
-    <li class='pipe'><a href="/smi/">SMI</a></li>
-    <li class='pipe'><a href="/tme/">TME</a></li>
-    <li class='pipe'><a href="/tfm/">TFM</a></li>
-    <li class='pipe'><a href="/borrowing/">MBR</a></li>
+      <li class='pipe'><a href="https://chmtl.indiana.edu/smi/">SMI</a></li>
+      <li class='pipe'><a href="https://chmtl.indiana.edu/tme/">TME</a></li>
+      <li class='pipe'><a href="https://chmtl.indiana.edu/tfm/">TFM</a></li>
+      <li class='pipe'><a href="https://chmtl.indiana.edu/borrowing/">MBR</a></li>
   </ul>
 </div>
 
@@ -227,7 +227,7 @@
     <div id="copyright">
         <div id="blockiu">
             <a href="http://www.iub.edu" title="Indiana University">
-                <img alt="Block IU" height="28" src="_assets/img/blockiu_white.gif" width="22" />
+                <img alt="Block IU" height="28" src="https://chmtl.indiana.edu/tml/16th/_assets/img/blockiu_white.gif" width="22" />
             </a>
         </div>
         <p id="statement">
