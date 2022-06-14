@@ -117,15 +117,14 @@
                                 <p class="title"><xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title"/></p>
                                 <p class="tmlSource"><strong>Source</strong>: <i><xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/title"/></i> (<xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/pubPlace"/>, <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/publisher"/>, <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/date"/>; <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/edition"/>).</p>
                                 <p id="chmtl-staff">
-                                    <span class="eca-span">Electronic version prepared by 
-                                        <xsl:for-each select="TEI/teiHeader/profileDesc/creation/rs">
-                                            <xsl:if test="TEI/teiHeader/profileDesc/creation/rs[@resp='E']"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs/name"/>
+                                    <span class="eca-span">Electronic version  
+                                        <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='entered'">prepared by <xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='entered']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="entered">E</span></a>,</xsl:if>
-                                            <xsl:if test="TEI/teiHeader/profileDesc/creation/rs[@resp='C']"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs/name"/>
+
+                                        <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='checked'">with <xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='checked']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="checked">C</span></a>,</xsl:if>
-                                            and <xsl:if test="TEI/teiHeader/profileDesc/creation/rs[@resp='A']"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs/name"/>
+                                        and <xsl:if test="TEI/teiHeader/profileDesc/creation/rs/@resp='approved'"><xsl:value-of select="TEI/teiHeader/profileDesc/creation/rs[@resp='approved']/name"/>
                                                 <a class="modal-tooltip eca-modal" modal="entry-abbrv"><span class="approved">A</span></a></xsl:if>
-                                        </xsl:for-each>
                                         for the <i><xsl:value-of select="TEI/teiHeader/fileDesc/publicationStmt/authority"/></i>, <xsl:value-of select="TEI/teiHeader/profileDesc/creation/date"/>.</span>
                                 </p>
                             </div>
