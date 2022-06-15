@@ -37,7 +37,7 @@
                     }
                     
                     .content {
-                    padding: 10px;
+                    padding: 18px;
                     display: block;
                     overflow: hidden;
                     font-size: 100%;
