@@ -291,4 +291,12 @@
             </xsl:for-each>  
         </ul>
     </xsl:template>
+    
+    <xsl:template match="//l">
+        <ul style="list-style-type:none;">
+            <xsl:for-each select=".">
+                <li><xsl:apply-templates/></li>
+            </xsl:for-each>  
+        </ul>
+    </xsl:template>
 </xsl:stylesheet>
