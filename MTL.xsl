@@ -13,6 +13,36 @@
                 <!--<link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/w3.css" />-->
                 <link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/fancybox.css" />
                 <script type= "text/javascript" src="https://chmtl.indiana.edu/tml/16th/_assets/js/chmtl_file.min.js"></script>
+                <style>
+                    .collapsible {
+                    background-color: white;
+                    cursor: pointer;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    position: relative;
+                    font-size: 120%;
+                    }
+                    
+                    .collapsible:after {
+                    content: '\2212';
+                    color: black;
+                    font-weight: bold;
+                    position: absolute;
+                    left: -16px;
+                    }
+                    
+                    .active:after {
+                    content: "\002B";
+                    }
+                    
+                    .content {
+                    padding: 18px;
+                    display: block;
+                    overflow: hidden;
+                    font-size: 100%;
+                    }
+                </style>
             </head>
             <body>
                 <div id="chmtl-identity">
@@ -176,15 +206,13 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="TEI/text/body/div/div">
-        <xsl:if test="head">
-            <h2><xsl:value-of select="head"/></h2>
-        </xsl:if>
-        <xsl:for-each select="div">
-            <xsl:if test="head">
-                <h3><xsl:value-of select="head"/></h3>
-            </xsl:if>         
-            <p><xsl:value-of select="p"/></p>
-        </xsl:for-each>
+        <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
+            <div class="content">  
+                <xsl:for-each select="div">
+                    <div><button class="collapsible"><xsl:value-of select="head"/></button>
+                        <div class="content"><p><xsl:value-of select="p"/></p></div></div>   
+                </xsl:for-each>
+            </div></div>
     </xsl:for-each>
 <!-- end text -->
 </div>
@@ -224,6 +252,24 @@
         </p>
     </div>
 </div>
+                <script type="text/javascript">
+                    <![CDATA[
+    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (!content.style.display || content.style.display === "block") {
+                    content.style.display = "none";
+                    } else {
+                    content.style.display = "block";
+                    }
+                    });
+                    }
+    ]]>
+                </script>                 
 </body>
        </html>
     </xsl:template>
