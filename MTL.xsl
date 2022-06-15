@@ -30,6 +30,7 @@
                     font-weight: bold;
                     position: absolute;
                     left: -16px;
+                    vertical-align: middle;
                     }
                     
                     .active:after {
@@ -41,6 +42,12 @@
                     display: block;
                     overflow: hidden;
                     font-size: 100%;
+                    }
+                    
+                    .pageNo {
+                    color: #999;
+                    font-size: 85%;
+                    vertical-align: super;
                     }
                 </style>
             </head>
