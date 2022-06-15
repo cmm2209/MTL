@@ -2,6 +2,12 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+    <xsl:template match="@*|node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
     <xsl:template match="/">
         <html>
             <head>
@@ -41,6 +47,12 @@
                     display: block;
                     overflow: hidden;
                     font-size: 100%;
+                    }
+                    
+                    .pageNo {
+                    color: #999;
+                    font-size: 85%;
+                    vertical-align: super;
                     }
                 </style>
             </head>
@@ -205,15 +217,7 @@
 
 <div id="tml-text">
 <!-- begin text -->
-    <xsl:for-each select="TEI/text/body/div/div">
-        <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
-            <div class="content">  
-                <xsl:for-each select="div">
-                <div><button class="collapsible"><xsl:value-of select="head"/></button>
-                <div class="content"><p><xsl:value-of select="p"/></p></div></div>   
-                     </xsl:for-each>
-            </div></div>
-    </xsl:for-each>
+    <xsl:apply-templates/>
 <!-- end text -->
 </div>
 </div>
@@ -273,8 +277,21 @@
 </body>
        </html>
     </xsl:template>
+
+    <xsl:template match="TEI/text/body/div">
+        <xsl:for-each select="div">
+            <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
+                <div class="content">  
+                    <xsl:for-each select="div">
+                        <div><button class="collapsible"><xsl:value-of select="head"/></button>
+                            <div class="content"><p><xsl:apply-templates/></p></div></div>   
+                    </xsl:for-each>
+                </div></div>
+        </xsl:for-each>
+    </xsl:template>
     
-<xsl:template match="milestone">
-    <span class="pageNo">[f.<xsl:value-of select="@n"/></span>
-</xsl:template>
+    <xsl:template match="//milestone">
+        <span class="pageNo">[f.<xsl:value-of select="@n"/>]</span>
+    </xsl:template>
+    
 </xsl:stylesheet>
