@@ -194,7 +194,6 @@
                         </div>
                     
                          <div id="metadata-contd">
-                                 <xsl:apply-templates/>
                                      <p class="text-sidebar-buttons"><button id="tml-notes" class="pure-button">TML notes</button>&#xA0;<button id="tml-concordances" class="pure-button">Concordances</button></p>
   <div id="sidebar">
       <div id="extras-wrapper">
@@ -217,6 +216,7 @@
 
 <div id="tml-text">
 <!-- begin text -->
+    <xsl:apply-templates/>
 <!-- end text -->
 </div>
 </div>
