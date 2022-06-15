@@ -220,16 +220,13 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="TEI/text/body/div/div">
-        <xsl:if test="head">
-            <h2><button class="collapsible"><xsl:value-of select="head"/></button></h2>
-            <div class="content"><p><xsl:value-of select="p"/></p></div>
-        </xsl:if>
-        <xsl:for-each select="div">
-            <xsl:if test="head">
-                <h3><button class="collapsible"><xsl:value-of select="head"/></button></h3>
-                <div class="content"><p><xsl:value-of select="p"/></p></div>
-            </xsl:if>         
-        </xsl:for-each>
+        <div><button class="collapsible"><h2><xsl:value-of select="head"/></h2></button>
+            <div class="content">  
+                <xsl:for-each select="div">
+                <div><button class="collapsible"><h3><xsl:value-of select="head"/></h3></button>
+                <div class="content"><p><xsl:value-of select="p"/></p></div></div>   
+                     </xsl:for-each>
+            </div></div>
     </xsl:for-each>
 <!-- end text -->
 </div>
