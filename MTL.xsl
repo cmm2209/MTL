@@ -215,10 +215,10 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="//div[@subtype='book']">
-        <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
+        <div id="{@xml:id}"><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
             <div class="content">  
                 <xsl:for-each select="div[@subtype='chapter']">
-                    <div><button class="collapsible"><xsl:value-of select="head"/></button>
+                    <div id="{@xml:id}"><button class="collapsible"><xsl:value-of select="head"/></button>
                         <div class="content"><xsl:apply-templates select="p"/>
                         </div>
                     </div>
