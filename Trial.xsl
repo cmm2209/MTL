@@ -21,6 +21,7 @@
                     text-align: left;
                     outline: none;
                     position: relative;
+                    font-size: 18px;
                     }
                     
                     .collapsible:after {
@@ -39,6 +40,7 @@
                     padding: 10px;
                     display: block;
                     overflow: hidden;
+                    font-size: 80%;
                     }
                 </style>
             </head>
@@ -204,10 +206,10 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="TEI/text/body/div/div">
-        <div><h2><button class="collapsible"><xsl:value-of select="head"/></button></h2>
+        <div><button class="collapsible"><xsl:value-of select="head"/></button>
             <div class="content">  
                 <xsl:for-each select="div">
-                <div><h3><button class="collapsible"><xsl:value-of select="head"/></button></h3>
+                <div><button class="collapsible"><xsl:value-of select="head"/></button>
                 <div class="content"><p><xsl:value-of select="p"/></p></div></div>   
                      </xsl:for-each>
             </div></div>
