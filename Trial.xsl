@@ -36,6 +36,7 @@
                     font-weight: bold;
                     position: absolute;
                     left: -16px;
+                    vertical-align: middle;
                     }
                     
                     .active:after {
