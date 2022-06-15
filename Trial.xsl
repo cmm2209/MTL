@@ -187,7 +187,7 @@
                                 <div class="w3-container">
                                     <a class="close-modal" modal="entry-abbrv-short"><span class="w3-closebtn"><i class="fa fa-times" aria="hidden"></i></span></a>
                                     <br />
-                                    <p><span class="checked">C</span>: Indicates the aforemententioned person(s) checked the transcription.</p>
+                                    <p><span class="checked">C</span>: Indicates the aforementioned person(s) checked the transcription.</p>
                                     <p><span class="approved">A</span>: Indicates the aforementioned person(s) approved the transcription for publication.</p>
                                 </div>
                             </div>
@@ -298,6 +298,14 @@
     <xsl:template match="//list">
         <ul style="list-style-type:none;">
             <xsl:for-each select="item">
+                <li><xsl:apply-templates/></li>
+            </xsl:for-each>  
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="//l">
+        <ul style="list-style-type:none;">
+            <xsl:for-each select=".">
                 <li><xsl:apply-templates/></li>
             </xsl:for-each>  
         </ul>
