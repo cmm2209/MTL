@@ -70,6 +70,17 @@
       <p>The story continues...</p>
     </div>
   </div>
+    <div  subtype="chapter">
+      <head>INDEX CAPITVM TOTIVS OPERIS.</head>
+      <p>
+        <list>
+          <item><ref target="#I.1">De cantu plano. Caput I.</ref> </item>
+          <item><ref target="#I.2">Manus diuisio in treis partes. Secundum quosdam etiam in quattuor. Caput II.</ref></item>
+          <item><ref target="#I.3">Alia manus diuisio in treis partes. Caput III.</ref></item>
+          <item>Finis Tabule</item>
+        </list>
+      </p>
+    </div>
 </div>
 </body>
 </text>
