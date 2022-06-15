@@ -27,6 +27,7 @@
                     color: black;
                     font-weight: bold;
                     float: left;
+                    margin-left: 5px;
                     }
                     
                     .active:after {
