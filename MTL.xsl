@@ -175,7 +175,7 @@
                                 <div class="w3-container">
                                     <a class="close-modal" modal="entry-abbrv-short"><span class="w3-closebtn"><i class="fa fa-times" aria="hidden"></i></span></a>
                                     <br />
-                                    <p><span class="checked">C</span>: Indicates the aforemententioned person(s) checked the transcription.</p>
+                                    <p><span class="checked">C</span>: Indicates the aforementioned person(s) checked the transcription.</p>
                                     <p><span class="approved">A</span>: Indicates the aforementioned person(s) approved the transcription for publication.</p>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@
             <div class="content">  
                 <xsl:for-each select="div">
                     <div><button class="collapsible"><xsl:value-of select="head"/></button>
-                        <div class="content"><p><xsl:value-of select="p"/></p></div></div>   
+                        <div class="content"><xsl:apply-templates/></div></div>   
                 </xsl:for-each>
             </div></div>
     </xsl:for-each>
