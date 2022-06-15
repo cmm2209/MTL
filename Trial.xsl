@@ -219,14 +219,33 @@
 
 <div id="tml-text">
 <!-- begin text -->
-    <xsl:for-each select="TEI/text/body/div/div[@subtype='book']">
-        <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
-            <div class="content">  
-                <xsl:for-each select="div[@subtype='chapter']">
-                    <div><button class="collapsible"><xsl:value-of select="head"/></button>
-                        <div class="content"><xsl:apply-templates/></div></div>   
-                </xsl:for-each>
-            </div></div>
+    <xsl:for-each select="//div">
+        <xsl:choose>
+            <xsl:when test="head">
+                <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
+                    <div class="content">  
+                        <xsl:for-each select="div">
+                            <div><button class="collapsible"><xsl:value-of select="head"/></button>
+                                <div class="content"><xsl:apply-templates select="p"/>
+                                </div>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <div><button class="collapsible"/>
+                    <div class="content">  
+                        <xsl:for-each select="div">
+                            <div><button class="collapsible"><xsl:value-of select="head"/></button>
+                                <div class="content"><xsl:apply-templates select="p"/>
+                                </div>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </div>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:for-each>
 <!-- end text -->
 </div>
