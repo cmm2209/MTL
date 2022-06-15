@@ -221,7 +221,7 @@
     <xsl:for-each select="TEI/text/body/div/div">
         <div><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
             <div class="content">  
-                <xsl:for-each select="div">
+                <xsl:for-each select="div[@subtype='chapter']">
                     <div><button class="collapsible"><xsl:value-of select="head"/></button>
                         <div class="content"><p><xsl:apply-templates/></p></div></div>   
                 </xsl:for-each>
