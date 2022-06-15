@@ -294,4 +294,8 @@
         <span class="pageNo">[f.<xsl:value-of select="@n"/>]</span>
     </xsl:template>
     
+    <xsl:template match="//ref">
+        <a href="{@target}"><xsl:value-of select="."/></a>
+    </xsl:template>
+    
 </xsl:stylesheet>
