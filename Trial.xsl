@@ -297,4 +297,12 @@
         <a href="{@target}"><xsl:value-of select="."/></a>
     </xsl:template>
     
+    <xsl:template match="//list">
+        <ul style="list-style-type:none;">
+            <xsl:for-each select="item">
+                <li><xsl:apply-templates/></li>
+            </xsl:for-each>  
+        </ul>
+    </xsl:template>
+    
 </xsl:stylesheet>
