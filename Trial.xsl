@@ -13,24 +13,7 @@
                 <!--<link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/w3.css" />-->
                 <link rel="stylesheet" type="text/css" href="https://chmtl.indiana.edu/tml/16th/_assets/css/fancybox.css" />
                 <script type= "text/javascript" src="https://chmtl.indiana.edu/tml/16th/_assets/js/chmtl_file.min.js"></script>
-                <script>
-                    <![CDATA[
-                      var coll = document.getElementsByClassName("collapsible");
-                    var i;
-                    
-                    for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (!content.style.display || content.style.display === "block") {
-                    content.style.display = "none";
-                    } else {
-                    content.style.display = "block";
-                    }
-                    });
-                    }
-                      ]]>
-                </script>
+                <script type="text/javascript" src="https://cmm2209.github.io/MTL/Collapse.js"></script>
                 <style>
                     .collapsible {
                     background-color: white;
