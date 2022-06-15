@@ -27,7 +27,6 @@
                     color: black;
                     font-weight: bold;
                     float: left;
-                    margin-left: 5px;
                     }
                     
                     .active:after {
@@ -203,7 +202,7 @@
 <div id="tml-text">
 <!-- begin text -->
     <xsl:for-each select="TEI/text/body/div/div">
-        <div><button class="collapsible"><h2><xsl:value-of select="head"/></h2></button>
+        <div><button class="collapsible"><xsl:value-of select="head"/></button>
             <div class="content">  
                 <xsl:for-each select="div">
                 <div><button class="collapsible"><h3><xsl:value-of select="head"/></h3></button>
