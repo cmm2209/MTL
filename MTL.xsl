@@ -189,7 +189,9 @@
         <!---->
         <div id="tml-canon-info">
             <div class="extras-heading"><a class="close-modal repoToolbox" modal="tml-canon-info"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">TML Notes</span></div>
-            <p><xsl:value-of select="TEI/teiHeader/profileDesc/settingDesc/p" /></p>
+            <p><xsl:for-each select="TEI/teiHeader/profileDesc/settingDesc">
+                <xsl:apply-templates/>
+            </xsl:for-each></p>
         </div>
 <div id="concordances">
     <div class="extras-heading"><a class="close-modal repoToolbox" modal="concordances"><i class="fa fa-times" aria="hidden"></i></a>&#xA0;<span class="title">Concordances</span></div>
