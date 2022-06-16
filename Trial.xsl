@@ -223,10 +223,20 @@
         <div id="{@xml:id}"><button class="collapsible"><b><xsl:value-of select="head"/></b></button>
                     <div class="content">  
                         <xsl:for-each select="div[@subtype='chapter']">
-                            <div id="{@xml:id}"><button class="collapsible"><xsl:value-of select="head"/></button>
-                                <div class="content"><xsl:apply-templates select="p"/>
-                                </div>
-                            </div>
+                            <xsl:choose>
+                                <xsl:when test="head">
+                                   <div id="{@xml:id}"><button class="collapsible"><xsl:value-of select="head"/></button>
+                                       <div class="content"><xsl:apply-templates select="p"/>
+                                       </div>
+                                   </div> 
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <div id="{@xml:id}"><button class="collapsible">[]</button>
+                                        <div class="content"><xsl:apply-templates select="p"/>
+                                        </div>
+                                    </div> 
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:for-each>
                     </div>
                 </div>
