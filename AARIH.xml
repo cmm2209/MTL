@@ -206,6 +206,7 @@
 <head><milestone unit="folio" n="Biiiv"/>PETRI AARON FLORENTINI HARMONICAE INSTITVTIONIS AD MAGNIFICVM EQVITEM AC IVRIS PERITVM HIERONYMVM. SANCTVM PETRVM BONONIENSEM PATRICIVM LIBER PRIMVS IOANNE ANTONIO FLAMINIO FOROCORNELIENSI INTERPRETE.</head>
 
   <div type="textpart" subtype="chapter" n="1" xml:id="I.1">
+    <head>[De cantu plano. Caput I.]</head>
     <p n="1"><seg xml:id="incipit">MAGNVM EST FLAMINI QVOD heri sum pollicitus nec me quidem poenitet aut sententiam</seg> muto, immo rei magnitudine magis, et claritate crescit animus, et in horas fit ardentior. Tu tantum mihi praesta, quam hesterno die pollicitus es promptam, et alacrem operam, et nihil non successurum putes. Arduum sane est, quod mente agito, ac prope diuinum. Sed mearum ipse uirium sum conscius, et quid possim intelligo non immemor horatiani illius praecepti.
       <l>Sumite materiam uestris, qui scribitis aequam</l>
       <l>Viribus, et uersate diu, quid ferre recusent</l>
@@ -759,15 +760,13 @@
     <head>DE LIGATVRIS LONGArum breuium. Caput .LXII.</head>
     <p n="1">SI notae connexae cum proprietate in parte dextra siue ascenderint: siue descenderint, longe semper erunt. Si uero in parte sinistra inferiori, breues. In parte superiori, semibreues. <milestone unit="folio" n="Hviiiiv"/> Sed illud meminisse oportet, quod longae tantum in principio, medio, ac fine esse cum proprietate queunt. Breues autem nitio solum. Si plures erunt sine proprietate notae descendentes quot quot fuerint, prima semper, et ultima longae erunt. Intermediae uero breues omnes. Praeterea si plures erunt notae quadrungulari forma descendentes, et prima nota in parte inferiori cum proprietate fuerit, dicta quidem nota breuis semper erit. Mediae item breues: ultima uero longa. Idem reliquis in locis seruabitur, in quibus notae sine proprietate fuerint, intermediae omnes illae siue ascenderint, siue descenderint: breues erunt. Tertio si plures descenderint notae, et in prima sit proprietas in parte quidem superiore, prima semper, ac secunda semibreues erunt: Intermixtae uero breues, ac ultima longa. Si uero notae, quae mediae fuerint, proprietatem habuerint, quot quot fuerint, longae proculdubio erunt. Quarto si plures connexae notae sine proprietate ascenderint, omnes quidem siue quadrangulares fuerint: siue obliquae, breues erunt. Quod si prima quidem ascendens nota proprietatem in inferiori parte habuerit, dicta quidem nota breuis erit. Si uero in parte ascendenti proprietatem habuerit: prima, et secunda, si obliquae fuerint, semibreues erunt. Notae obliquae, si proprietatem in parte inferiori habuerint, et siue ascenderint, siue descenderint, breues quidem semper erunt. Huiusmodi autem oblique notae (de breuibus et semibreuibus loquor) se iunctae quidem a compositoribus describuntur. Exemplum proponam. Erit quadrangularis nota in parte sinistra inferiore caudam habens. Talis quidem figura sic sola, atque disiuncta breuis erit. Quod si proprietatem in eadem sinistra parte, sed superiori habuerit, semper erit semibreuis. Si duae fuerint, et quadrangularem formam habuerint, ambae semibreues erunt. Si obliquae fuerint ubi proprietas erit, tales quidem erunt, quales illas ipsa proprietas indicabit. Quare si proprietas in parte dextra ascendens fuerit, uel descendens, semper quidem, uel maxima erit, uel longa. Ipsa autem notae figura tibi uel esse maximam, uel longam indicabit. Nam si figura ipsa quadrangularis fuerit, proculdubio maximam ostendet, quam si paulo minorem uideris longam intelliges. Quod si proprietatem in parte sinistra descendentem repereris, <milestone unit="folio" n="Hxr"/> scito semper esse breuem. Si uero ascendentem, esse semibreuem, siue sint quadrangulares, siue obliquae. Cum duas solas cum proprietate notas inueneris, quae descendant, et quadrangulares sint, longae quidem erunt. Sin uero ascendant, breues, ut ante diximus. Quae quidem praecepta si diligenter inspexeris, et ad memoriam redegeris, facilis tibi ad canendum uia patebit.</p>
   </div>
-<div type="textpart" subtype="book" n="1" xml:id="back">
-  <div type="textpart" subtype="chapter" n="1" xml:id="colophon">
+  <div type="textpart" subtype="chapter" n="63" xml:id="colophon">
     <p n="1">Impressum Bononiae in Aedibus Benedicti Hectoris Bibliopolae Bononiensis. Tempore Pontificatus domini nostri Leonis Pape Decimi. <date n="1516">M CCCCC XVI.</date></p>
   </div>
-  <div type="textpart" subtype="chapter" n="2" xml:id="register">
+  <div type="textpart" subtype="chapter" n="64" xml:id="register">
     <head>REGESTVM</head>
     <p n="1">A ii B iiii C iiii D iiii E iiii F iiii G iiii H v  </p>
   </div>
-</div>
 </div>  
 </div>
 </body>
