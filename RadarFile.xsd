@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:re="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" xmlns="http://radar-service.eu/schemas/descriptive/radar/v09/radar-file" targetNamespace="http://radar-service.eu/schemas/descriptive/radar/v09/radar-file" elementFormDefault="qualified" version="9.2">
+		
+	<xs:import namespace="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" schemaLocation="RadarElements.xsd"/>
+	
+	<xs:element name="radarFile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="re:alternateIdentifiers" minOccurs="0"/>
+				<xs:element ref="re:relatedIdentifiers" minOccurs="0"/>
+				
+				<xs:element ref="re:creators" minOccurs="0"/>
+				<xs:element ref="re:contributors" minOccurs="0"/>
+				
+				<xs:element ref="re:title" minOccurs="0"/>
+				<xs:element ref="re:additionalTitles" minOccurs="0"/>
+				<xs:element ref="re:descriptions" minOccurs="0"/>
+				<xs:element ref="re:keywords" minOccurs="0"/>
+				
+				<xs:element ref="re:productionYear" minOccurs="0"/>
+				<xs:element ref="re:language" minOccurs="0"/>
+				<xs:element ref="re:subjectAreas" minOccurs="0"/>
+				
+				<xs:element ref="re:resource" minOccurs="0"/>
+				<xs:element ref="re:geoLocations" minOccurs="0"/>
+				<xs:element ref="re:dataSources" minOccurs="0"/>
+				<xs:element ref="re:software" minOccurs="0"/>
+				<xs:element ref="re:processing" minOccurs="0"/>
+
+				<xs:element ref="re:relatedInformations" minOccurs="0"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xsd:schema>
